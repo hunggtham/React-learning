@@ -7,9 +7,9 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className='navbar' bg="light" expand="lg">
             <Container>
-                <NavLink className='navbar-brand navbar-nav' to="/">MinhHieu</NavLink>
+                <NavLink className='navbar-brand' to="/">MinhHieu</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -19,19 +19,22 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
-                        <NavDropdown title="Setting" id="basic-nav-dropdown">
+                        <button className='btn-login'>Login</button>
+                        <button className='btn-signup'>SignUp</button>
+                        {/* <NavDropdown title="Setting" id="basic-nav-dropdown">
                             <NavDropdown.Item>Action</NavDropdown.Item>
                             <NavDropdown.Item>
                                 Log Out
                             </NavDropdown.Item>
                             <NavDropdown.Item >
                                 Profile
-                            </NavDropdown.Item>
-                            {/* <NavDropdown.Divider /> */}
-                            {/* <NavDropdown.Item href="#action/3.4">
+                            </NavDropdown.Item> */}
+                        {/* chưa cần đến */}
+                        {/* <NavDropdown.Divider /> */}
+                        {/* <NavDropdown.Item href="#action/3.4">
                                 Separated link
                             </NavDropdown.Item> */}
-                        </NavDropdown>
+                        {/* </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
