@@ -1,2 +1,6 @@
 Route
     -routeindex: route con không trùng với route nào cả thì sẽ dùng đến route index
+
+Admin sidebar: 
+    npm install --save-exact react-pro-sidebar@0.7.1
+    npm install --save-exact react-icons@4.4.0

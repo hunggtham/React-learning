@@ -19,8 +19,9 @@ root.render(
         <Route path="/" element={<App />} >
           <Route index element={<HomePage />} />
           <Route path="users" element={<User />} />
-          <Route path="admins" element={<Admin />} />
         </Route>
+        {/* cho ra ngoài để dùng header khác với trang home */}
+        <Route path="admins" element={<Admin />} />
 
       </Routes>
     </BrowserRouter>
