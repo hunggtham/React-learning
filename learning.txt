@@ -1,0 +1,2 @@
+Route
+    -routeindex: route con không trùng với route nào cả thì sẽ dùng đến route index

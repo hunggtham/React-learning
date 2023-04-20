@@ -1,3 +1,4 @@
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,7 +9,7 @@ const Header = () => {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <NavLink className='navbar-brand navbar-nav' to="/">MinhHieu</NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -19,11 +20,11 @@ const Header = () => {
                     </Nav>
                     <Nav>
                         <NavDropdown title="Setting" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
+                            <NavDropdown.Item>Action</NavDropdown.Item>
+                            <NavDropdown.Item>
                                 Log Out
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
+                            <NavDropdown.Item >
                                 Profile
                             </NavDropdown.Item>
                             {/* <NavDropdown.Divider /> */}
