@@ -11,6 +11,9 @@ import {
     SidebarContent,
 } from 'react-pro-sidebar';
 import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
+import { DiReact } from 'react-icons/di';
+import { GiReactor } from 'react-icons/gi';
+import { MdDashBoard } from 'react-icons/md'
 import sidebarBg from '../../assets/bg2.jpg';
 
 // import { FaGem, FaHeart } from 'react-icons';
@@ -56,7 +59,8 @@ const Sidebar = (props) => {
                             whiteSpace: 'nowrap',
                         }}
                     >
-                        MinhHieu
+                        <DiReact size={'2em'} color={"00bfff"} />
+                        <span>MinhHieu</span>
                     </div>
                 </SidebarHeader>
 
@@ -73,12 +77,12 @@ const Sidebar = (props) => {
                     <Menu iconShape="circle">
                         <SubMenu
                             suffix={<span className="badge yellow">3</span>}
-                            title='withSuffix'
+                            title='Manage'
                             icon={<FaRegLaughWink />}
                         >
-                            <MenuItem>SubMenu</MenuItem>
-                            <MenuItem>SubMenu</MenuItem>
-                            <MenuItem>SubMenu</MenuItem>
+                            <MenuItem>User Management</MenuItem>
+                            <MenuItem>Quiz Management</MenuItem>
+                            <MenuItem>Question Management</MenuItem>
                         </SubMenu>
                         {/* <SubMenu
                             prefix={<span className="badge gray">3</span>}
@@ -113,14 +117,14 @@ const Sidebar = (props) => {
                         }}
                     >
                         <a
-                            href="https://github.com/azouaoui-med/react-pro-sidebar"
+                            href="https://github.com/hunggtham"
                             target="_blank"
                             className="sidebar-btn"
                             rel="noopener noreferrer"
                         >
                             <FaGithub />
                             <span style={{ whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
-                                viewSource
+                                HunggTham
                             </span>
                         </a>
                     </div>
