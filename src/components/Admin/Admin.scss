@@ -1,7 +1,16 @@
 $highlight-color: #dee2ec;
 
+.admin-sidebar__logo {
+    display: flex;
+
+    .logo-name {
+        padding-top: 5px;
+    }
+}
+
 .admin-container {
     display: flex;
+
 
 
     .admin-sidebar {
@@ -40,6 +49,20 @@ $highlight-color: #dee2ec;
             &:hover {
                 color: $highlight-color;
             }
+        }
+    }
+
+    .admin-content {
+        width: 100%;
+
+        .admin-header {
+            height: 40px;
+            border: 1px solid green;
+        }
+
+        .admin-main {
+            border: 1px solid red;
+
         }
     }
 }

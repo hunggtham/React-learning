@@ -4,3 +4,6 @@ Route
 Admin sidebar: 
     npm install --save-exact react-pro-sidebar@0.7.1
     npm install --save-exact react-icons@4.4.0
+
+    call api, notification popup, paginate(phan trang)
+     npm install --save-exact axios@0.27.2 toastify@9.0.7 react-paginate@8.1.3

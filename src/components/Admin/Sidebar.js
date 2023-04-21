@@ -15,6 +15,7 @@ import { DiReact } from 'react-icons/di';
 import { GiReactor } from 'react-icons/gi';
 import { MdDashBoard } from 'react-icons/md'
 import sidebarBg from '../../assets/bg2.jpg';
+import { NavLink, Link } from 'react-router-dom';
 
 // import { FaGem, FaHeart } from 'react-icons';
 // import { FatachomeTerAlt, FaGem, FaList, FaGihub, FarelaughWink, FaHeart } from 'react-icons/fa';
@@ -59,8 +60,10 @@ const Sidebar = (props) => {
                             whiteSpace: 'nowrap',
                         }}
                     >
-                        <DiReact size={'2em'} color={"00bfff"} />
-                        <span>MinhHieu</span>
+                        <div className='admin-sidebar__logo'>
+                            <DiReact size={'2em'} color={"00bfff"} />
+                            <NavLink className='nav-link logo-name' to='/'>MinhHieu</NavLink>
+                        </div>
                     </div>
                 </SidebarHeader>
 
@@ -71,6 +74,7 @@ const Sidebar = (props) => {
                             suffix={<span className="badge red">News</span>}
                         >
                             Dashboard
+                            <Link to="/admins" />
                         </MenuItem>
                         <MenuItem icon={<FaGem />}> Component</MenuItem>
                     </Menu>
@@ -80,9 +84,16 @@ const Sidebar = (props) => {
                             title='Manage'
                             icon={<FaRegLaughWink />}
                         >
-                            <MenuItem>User Management</MenuItem>
-                            <MenuItem>Quiz Management</MenuItem>
-                            <MenuItem>Question Management</MenuItem>
+                            <MenuItem>User Management
+                                <Link to="/admins/user-manage" />
+                            </MenuItem>
+                            <MenuItem>Quiz Management
+                                <Link to="/admins/quiz-manage" />
+
+                            </MenuItem>
+                            <MenuItem>Question Management
+                                <Link to="/admins/ques-manage" />
+                            </MenuItem>
                         </SubMenu>
                         {/* <SubMenu
                             prefix={<span className="badge gray">3</span>}
@@ -124,7 +135,7 @@ const Sidebar = (props) => {
                         >
                             <FaGithub />
                             <span style={{ whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
-                                HunggTham
+                                MinhHieu
                             </span>
                         </a>
                     </div>
