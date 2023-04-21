@@ -36,7 +36,7 @@ const Sidebar = (props) => {
 
             {/* source: https://github.com/azouaoui-med/react-pro-sidebar/blob/v0.x/demo/src/Aside.js */}
             <ProSidebar
-                image={image ? sidebarBg : false}
+                image={sidebarBg}
                 rtl={rtl}
                 collapsed={collapsed}
                 toggled={toggled}
