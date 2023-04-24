@@ -21,12 +21,17 @@ const ModalCreateUser = () => {
 
     const handeUploadImg = (event) => {
         // console.log('upload img', event.target.files[0]);
-        setPreviewImage = URL.createObjectURL(event.target.files[0]);
+        if (event.target && event.target.files && event.target.files[0]) {
+            setPreviewImage(URL.createObjectURL(event.target.files[0]));
+            setAvatar(event.target.files[0]);
+        } else {
+            // setPreviewImage("");
+        }
     }
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={handleShow} >
                 Launch demo modal
             </Button>
 
@@ -66,19 +71,22 @@ const ModalCreateUser = () => {
                         <div className="col-md-4">
                             <label className="form-label">Role</label>
                             <select id="inputState" className="form-select" onChange={(event) => setRole(event.target.value)}>
+                                value={role}
                                 <option value="USER">USER</option>
                                 <option value="ADMIN">ADMIN</option>
                             </select>
                         </div>
-                        <div className='col-md-12 img-upload'>
+                        <div className='col-md-12 img-upload'  >
                             <label className="form-label" htmlFor='label-upload'>
-                                Upload Avatar Image</label>
-                            <BiImageAdd />
+                                Upload Avatar Image
+                                <BiImageAdd />
+                            </label>
+
                             <input type='file' hidden id='label-upload' onChange={(event) => handeUploadImg(event)} />
                         </div>
                         <div className='col-md-12 img-preview'>
                             {previewImage ?
-                                <img src='https://miro.medium.com/max/3840/1*xMuIOwjliGUPjkzukeWKfw.jpeg' />
+                                <img src={previewImage} />
                                 :
                                 <span>Image Preview</span>
                                 // https://drive.google.com/drive/folders/1u43j2fL94TwJropXjqdnp_P0MBmBumKW
