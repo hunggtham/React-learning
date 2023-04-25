@@ -28,7 +28,6 @@ function App() {
             <Route path={path.HOME} element={<Home />} />
             <Route path={path.LOGIN} element={<Login />} />
 
-
             <Route path={path.STAR} element={<Home />} />
           </Route>
         </Routes>

@@ -1,5 +1,8 @@
 import icons from "./icons"
-const { MdOutlineLibraryMusic } = icons;
+const { MdOutlineLibraryMusic,
+    MdOutlineFeed,
+    TbChartArcs,
+    RiCompassDiscoverFill } = icons;
 //using array to mapping over
 
 export const sidebarMenu = [
@@ -13,18 +16,18 @@ export const sidebarMenu = [
         path: '',
         text: 'Khám phá',
         end: true,
-        icons: <MdOutlineLibraryMusic size={24} />
+        icons: <RiCompassDiscoverFill size={24} />
     },
     {
         path: 'zing-chart',
         text: '#Zingchar',
         end: true,
-        icons: <MdOutlineLibraryMusic size={24} />
+        icons: <TbChartArcs size={24} />
     },
     {
         path: 'follow',
         text: 'Theo dõi',
         end: true,
-        icons: <MdOutlineLibraryMusic size={24} />
+        icons: <MdOutlineFeed size={24} />
     },
 ]
