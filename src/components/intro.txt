@@ -1,0 +1,1 @@
+-folder chứa các components không có route( để import vào các components khác)

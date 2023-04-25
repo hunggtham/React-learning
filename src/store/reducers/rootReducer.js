@@ -2,8 +2,8 @@
 
 import appReducer from "./appReducer";
 
-//combine all recude to one, apply: using midware for redux
-import { combineReducers, applyMiddleware } from "redux";
+//combine all recude to one, applyMiddleware: apply: using midware for redux
+import { combineReducers, } from "redux";
 
 //combine reducers
 const rootReducer = combineReducers({

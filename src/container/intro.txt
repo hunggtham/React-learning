@@ -1,0 +1,7 @@
+- folder chứa các component mà chứa các route riêng biệt
+- có thể thay là page
+
+public và system:  không đăng nhập và cần đăng nhập
+
+public 
+    index.js: tượng trưng cho folder public luôn, import các trang con lại vào

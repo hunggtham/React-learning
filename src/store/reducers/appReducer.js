@@ -4,7 +4,7 @@ import actionTypes from "../actions/actionTypes";
 //init state(avoid undefined)
 const initState = {
     homeData: [],
-    test: 'Test 123'
+    test: 'Test 123',
 }
 
 const appReducer = (state = initState, action) => {

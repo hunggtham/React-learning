@@ -7,7 +7,12 @@ import { ToastContainer } from 'react-toastify';
 
 //userSelector: get data from redux, useDispatch: bring action to redux
 import { useSelector, useDispatch } from 'react-redux';
+
+
 import 'react-toastify/dist/ReactToastify.css';
+import { Route, Routes } from 'react-router-dom';
+import { Home, Login, Public } from './container/public';
+import path from './ultis/path';
 
 function App() {
   //state: represent to all state save in store(reducer)
@@ -16,7 +21,16 @@ function App() {
   console.log(test);
   return (
     <>
-      <div className="text-3xl font-bold underline">Test</div>
+      <div className=''>
+        <Routes>
+          {/* /*: cho tất cả page */}
+          <Route path={path.PULIC} element={<Public />}>
+            <Route path={path.HOME} element={<Home />} />
+            <Route path={path.LOGIN} element={<Login />} />
+          </Route>
+        </Routes>
+      </div>
+
 
 
       <ToastContainer
