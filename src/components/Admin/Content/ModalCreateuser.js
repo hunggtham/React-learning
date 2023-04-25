@@ -3,10 +3,11 @@ import { useState } from 'react';
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { BiImageAdd } from 'react-icons/bi';
+import { FcPlus } from 'react-icons/fc';
 // source: https://react-bootstrap.netlify.app/docs/components/modal/
-const ModalCreateUser = () => {
-    const [show, setShow] = useState(false);
+const ModalCreateUser = (props) => {
+
+    const { show, setShow } = props;
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -31,9 +32,9 @@ const ModalCreateUser = () => {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow} >
+            {/* <Button variant="primary" onClick={handleShow} >
                 Launch demo modal
-            </Button>
+            </Button> */}
 
             <Modal
                 show={show} onHide={handleClose}
@@ -78,8 +79,9 @@ const ModalCreateUser = () => {
                         </div>
                         <div className='col-md-12 img-upload'  >
                             <label className="form-label" htmlFor='label-upload'>
+                                <FcPlus />
                                 Upload Avatar Image
-                                <BiImageAdd />
+
                             </label>
 
                             <input type='file' hidden id='label-upload' onChange={(event) => handeUploadImg(event)} />

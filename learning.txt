@@ -7,3 +7,24 @@ Admin sidebar:
 
     call api, notification popup, paginate(phan trang)
      npm install --save-exact axios@0.27.2 toastify@9.0.7 react-paginate@8.1.3
+
+
+Redux:
+    ứng dụng phải lớn thì mới sử dụng
+    dữ liệu cần cập nhật real-time => hiệu năng cao => cần sử dụng Redux
+
+    redux: giúp có thể quản lý các nội dung cần chia sẻ các component (đổi 1 +> thay đổi cho nhiều)
+
+
+context api :nội dung của nó thay đổi, khiến các component sử dụng context api đó đều phải render theo( dùng react memo cũng k chặn đc re-render)
+            re-render nhiều lần -> giật lag
+            không thể debug(không thể biết được có gì)
+            =>lịch sử: web nhỏ có thể sử dụng context api, js nhưng web có thể scale lên thì sử dụng typescript( đảm bảo tính scale) + chia sẻ dữ liệu giữa các component(redux)
+redux: muốn cái nào render thì nó sẽ render
+        kiểm soát dữ liệu tốt hơn nhiều
+
+
+
+
+(copy of 5,6) #2/copy of 7/react ultimate z-a ()
+nếu học thêm nodejs thì học từ react redux /02 vanilla redux  và tiếp tục sang bên react ultimate z-a () học tiếp từ copy of 7

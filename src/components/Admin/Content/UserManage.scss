@@ -1,7 +1,22 @@
 .user-manage_container {
+    padding: 10px;
 
-    .user-content {}
+    .title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .user-content {
+        .btn-add-new {
+            border: none;
+            border-radius: 5px;
+            margin: 15px 0;
+
+            .table-users-container {}
+        }
+    }
 }
+
 
 .model-add-user {
 
