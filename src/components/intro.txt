@@ -1,1 +1,8 @@
 -folder chứa các components không có route( để import vào các components khác)
+- index.js: gom các file trong folder trong 1 file: khi gọi thì cần gọi đến folder
+-bố cục là 1 side bar bên trái, 1 danh sách phát bên phải
+    1 header: thanh tìm kiếm bên trên, và 1 thanh phát nhạc bên dưới(luôn nổi)
+
+
+object-cover: ưu tiên kích thước dù có bị cắt ảnh
+    -contain: ưu tiên ảnh hơn, lấy width hoặc height rồi k cắt
