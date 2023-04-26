@@ -9,7 +9,7 @@ const Home = () => {
         const fetchDataHome = async () => {
             // sử dụng await bởi hàm getHome dùng async nên phải chờ nó chạy xong thì mới chạy xuống code dưới
             const response = await apis.getHome();
-            console.log(response);
+            // console.log(response);
         }
         fetchDataHome()
 

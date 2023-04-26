@@ -1,1 +1,2 @@
 - lưu các constant
+- fn: function helper

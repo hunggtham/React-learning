@@ -12,7 +12,7 @@ const appReducer = (state = initState, action) => {
         // get Hompage
 
         case actionTypes.GET_HOME:
-            console.log(action);
+            // console.log(action);
             return {
                 ...state,
                 banner: action.homedata?.find(item => item.sectionType === 'banner')?.items || null

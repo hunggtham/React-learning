@@ -11,7 +11,7 @@ import { useDispatch } from 'react-redux';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { Route, Routes } from 'react-router-dom';
-import { Home, Login, Public } from './container/public';
+import { Home, Login, Public, MyMusic } from './container/public';
 import path from './ultis/path';
 
 import { useEffect } from 'react';
@@ -34,6 +34,7 @@ function App() {
           <Route path={path.PULIC} element={<Public />}>
             <Route path={path.HOME} element={<Home />} />
             <Route path={path.LOGIN} element={<Login />} />
+            <Route path={path.MY_MUSIC} element={<MyMusic />} />
 
             <Route path={path.STAR} element={<Home />} />
           </Route>
