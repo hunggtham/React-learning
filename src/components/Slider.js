@@ -28,6 +28,7 @@ const Slider = () => {
                 // console.log(i);
 
             }
+            sliderEls[max].classList.add('animate-slide-right');
 
             if (min == maxLength) {
                 min = 0
@@ -62,5 +63,5 @@ const Slider = () => {
         </div>
     )
 }
-
+// https://youtu.be/WnXFbvp7tZQ?list=PLGcINiGdJE91fhdIYP2iQ5R2v0wWFrtyF&t=513
 export default Slider
