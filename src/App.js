@@ -6,19 +6,26 @@ import { ToastContainer } from 'react-toastify';
 //import {useState} from 'react';
 
 //userSelector: get data from redux, useDispatch: bring action to redux
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 
 import 'react-toastify/dist/ReactToastify.css';
 import { Route, Routes } from 'react-router-dom';
-import { Home, Login, Public, STAR } from './container/public';
+import { Home, Login, Public } from './container/public';
 import path from './ultis/path';
 
+import { useEffect } from 'react';
+import * as actions from './store/actions'
 function App() {
   //state: represent to all state save in store(reducer)
   //in all reduce:have app: appReducer
-  const { test } = useSelector(state => state.app);
-  console.log(test);
+  // const { test } = useSelector(state => state.app);
+  // console.log(test);
+
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(actions.getHome())
+  }, [])
   return (
     <>
       <div className=''>

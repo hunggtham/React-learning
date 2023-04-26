@@ -3,16 +3,20 @@ import actionTypes from "../actions/actionTypes";
 
 //init state(avoid undefined)
 const initState = {
-    homeData: [],
-    test: 'Test 123',
+    banner: [],
 }
 
 const appReducer = (state = initState, action) => {
     //action with each state 
     switch (action.type) {
         // get Hompage
+
         case actionTypes.GET_HOME:
-            return state;
+            console.log(action);
+            return {
+                ...state,
+                banner: action.homedata?.find(item => item.sectionType === 'banner')?.items || null
+            };
 
         default:
             return state;

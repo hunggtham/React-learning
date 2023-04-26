@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { Header } from '../../components';
+import { Header, Slider } from '../../components';
 import * as apis from '../../apis';
-import { AiOutlineEllipsis } from 'react-icons/ai';
+// import { AiOutlineEllipsis } from 'react-icons/ai';
 
 const Home = () => {
 
@@ -22,6 +22,8 @@ const Home = () => {
             <div className='h-[70px] px-[59px] flex items-center'  >
                 <Header />
             </div>
+            <Slider />
+
         </div>
     )
 }
