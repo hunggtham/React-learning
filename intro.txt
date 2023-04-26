@@ -1,0 +1,3 @@
+server: https://vercel.com/hunggtham/api-zing-mp3
+        github https://github.com/hunggtham/api-zing-mp3
+        
